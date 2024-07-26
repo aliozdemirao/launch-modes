@@ -13,6 +13,10 @@
         android:theme="@style/Theme.LaunchModes"
         tools:targetApi="31">
         <activity
+            android:name=".SecondActivity"
+            android:exported="false"
+            android:launchMode="standard" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
