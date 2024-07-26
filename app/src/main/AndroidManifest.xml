@@ -15,7 +15,8 @@
         <activity
             android:name=".singletask.SecondActivitySingleTask"
             android:exported="false"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"
+            android:taskAffinity="com.aliozdemir.blabla"/>
         <activity
             android:name=".singletask.MainActivitySingleTask"
             android:exported="true" >
