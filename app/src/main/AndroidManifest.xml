@@ -13,17 +13,25 @@
         android:theme="@style/Theme.LaunchModes"
         tools:targetApi="31">
         <activity
-            android:name=".SecondActivity"
+            android:name=".singletop.SecondActivitySingleTop"
             android:exported="false"
-            android:launchMode="standard" />
+            android:launchMode="singleTop" />
         <activity
-            android:name=".MainActivity"
+            android:name=".singletop.MainActivitySingleTop"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false"
+            android:launchMode="standard" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
         </activity>
     </application>
 
