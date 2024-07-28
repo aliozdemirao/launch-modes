@@ -13,6 +13,22 @@
         android:theme="@style/Theme.LaunchModes"
         tools:targetApi="31">
         <activity
+            android:name=".singleinstancepertask.ThirdActivitySingleInstancePerTask"
+            android:exported="false" />
+        <activity
+            android:name=".singleinstancepertask.SecondActivitySingleInstancePerTask"
+            android:exported="false"
+            android:launchMode="singleInstancePerTask"/>
+        <activity
+            android:name=".singleinstancepertask.MainActivitySingleInstancePerTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".singleinstance.ThirdActivitySingleInstance"
             android:exported="false" />
         <activity
@@ -22,11 +38,6 @@
         <activity
             android:name=".singleinstance.MainActivitySingleInstance"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".singletask.SecondActivitySingleTask"
